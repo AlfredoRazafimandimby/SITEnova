@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVA Robotics - Smart Alert House</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div id="cursor-ring"></div>
+  <div id="cursor-dot"></div>
+
+  <!-- Toast notification -->
+  <div id="toast">✔ INSCRIPTION CONFIRMÉE</div>
+
+  <!-- Particle background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ════════════════ HEADER ════════════════ -->
+  <header>
+    <div class="header-badge">Système de sécurité v2.6.1</div>
+    <h1><span class="n">N</span>OV<span class="a">A</span> Robotics</h1>
+    <p class="header-sub">Smart Alert House — Sécurité intelligente pour votre maison</p>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#abonnement">Abonnement</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="scroll-hint">
+      <span></span>
+      DÉFILER
+    </div>
+  </header>
+
+  <!-- ════════════════ SERVICES ════════════════ -->
+  <section id="services">
+    <div class="reveal">
+      <h2>
+        <span class="h2-number">01 /</span>
+        Nos Services
+        <span class="h2-line"></span>
+      </h2>
+      <p>Protégez votre maison grâce à notre système d'alarme intelligent basé sur Arduino Uno.</p>
+      <p>Détection de mouvement, alerte sonore et notifications personnalisées.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <span class="card-icon">📡</span>
+        <span class="card-num">// 001</span>
+        <h3>Détection PIR</h3>
+        <p>Capteurs de mouvement haute sensibilité avec portée jusqu'à 12 mètres et angle de 120°.</p>
+      </div>
+      <div class="card" style="transition-delay:.1s">
+        <span class="card-icon">🔔</span>
+        <span class="card-num">// 002</span>
+        <h3>Alerte Sonore</h3>
+        <p>Sirène 110 dB déclenchée en moins de 0,3 seconde après détection d'intrusion.</p>
+      </div>
+      <div class="card" style="transition-delay:.2s">
+        <span class="card-icon">📲</span>
+        <span class="card-num">// 003</span>
+        <h3>Notifications</h3>
+        <p>Alertes instantanées sur votre smartphone — application NOVA disponible iOS & Android.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ════════════════ ABONNEMENT ════════════════ -->
+  <section id="abonnement">
+    <div class="reveal">
+      <h2>
+        <span class="h2-number">02 /</span>
+        S'abonner
+        <span class="h2-line"></span>
+      </h2>
+      <p>Choisissez votre formule d'abonnement et bénéficiez d'une sécurité 24/7.</p>
+
+      <form id="sub-form" novalidate>
+        <div class="field-wrap">
+          <input type="text" id="name" placeholder=" " required>
+          <label for="name">NOM COMPLET</label>
+        </div>
+        <div class="field-wrap">
+          <input type="email" id="email" placeholder=" " required>
+          <label for="email">ADRESSE EMAIL</label>
+        </div>
+        <div class="field-wrap">
+          <input type="password" id="pwd" placeholder=" " required>
+          <label for="pwd">MOT DE PASSE</label>
+        </div>
+        <button class="btn" type="submit"><span>S'INSCRIRE</span></button>
+      </form>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ════════════════ CONTACT ════════════════ -->
+  <section id="contact">
+    <div class="reveal">
+      <h2>
+        <span class="h2-number">03 /</span>
+        Contact
+        <span class="h2-line"></span>
+      </h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <span class="contact-label">// EMAIL</span>
+        <span class="contact-value">contact@novarobotics.com</span>
+      </div>
+      <div class="contact-card" style="transition-delay:.15s">
+        <span class="contact-label">// TÉLÉPHONE</span>
+        <span class="contact-value">+261 33 43 124 44</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ FOOTER ════════════════ -->
+  <footer>
+    <p>&copy; 2026 NOVA Robotics — Tous droits réservés</p>
+    <div class="footer-status">
+      <div class="status-dot"></div>
+      SYSTÈME OPÉRATIONNEL
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
